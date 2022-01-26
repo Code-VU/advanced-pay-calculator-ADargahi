@@ -15,7 +15,7 @@ def calculatePay():
     else:
         gross_pay = float(hrs) * float(rate)
 
-    print(gross_pay)
+    print("Pay: " + str(gross_pay))
     
     
     # end assignment
