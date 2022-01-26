@@ -4,11 +4,12 @@ def calculatePay():
     hrs = input("Enter Hours: ")
     rate = input("Enter Rate: ")
     overtimeHrs = 0
-    overtimeRate = float(rate) * 1.5
+    overtimeRate = 0
     gross_pay = 0
     
     if float(hrs) > 40:
         overtimeHrs = float(hrs)-40
+        overtimeRate = float(rate) * 1.5
         hrs = 40
         gross_pay = (float(hrs) * float(rate)) + (float(overtimeHrs) * float(overtimeRate))
     else:
@@ -23,4 +24,4 @@ def calculatePay():
 ## uncomment calculatePay() and run > python payCalculator.py
 ## ***IMPORTANT*** please recomment before you submit/sync your assignment.
 ## OR YOUR TEST WILL NOT RUN
-#calculatePay()
+calculatePay()
